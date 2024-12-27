@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Computing</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg
+            class="fill-current h-8 w-8 mr-2"
+            width="54"
+            height="54"
+            viewBox="0 0 54 54"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+            />
+          </svg>
+          <span class="font-semibold text-xl tracking-tight"
+            >Binary Computing</span
+          >
+        </div>
+        <div class="block lg:hidden">
+          <button
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full block lg:flex lg:items-center lg:w-auto">
+          <div class="text-l lg:flex-grow">
+            <a
+              href="#Home"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-white mr-4"
+            >
+              Home
+            </a>
+            <a
+              href="#AboutUs"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            >
+              About Us
+            </a>
+            <a
+              href="#Contact"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            >
+              Contact
+            </a>
+          </div>
+          <!-- <div>
+            <a
+              href="#"
+              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+              >Download</a
+            >
+          </div> -->
+        </div>
+      </nav>
+      <main class="mt-8 lg:mt-16 sm:px-8">
+        <section class="container mx-auto py-6">
+          <div class="w-full">
+            <h1
+              class="text-5xl lg:text-6xl font-bold text-teal-600 mb-2 lg:mb-6"
+            >
+              Build Your Product
+            </h1>
+            <p class=" w-1/2 text-md lg:text-xl font-light text-gray-800 mb-8">
+              We deliver transformative products that will increase user
+              satisfaction and business value for our numerous clients. Our
+              expertise spans a wide range of technologies and services,
+              ensuring that we can meet the unique needs of your organization.
+            </p>
+            <button
+              class="rounded-full px-12 py-2 bg-teal-600 text-white text-xl hover:bg-teal-50 hover:text-teal-600 hover:border-solid	hover:outline"
+            >
+              Learn More
+            </button>
+          </div>
+        </section>
+        <section class="container mx-auto py-6">
+          <div class="flex items-center flex-wrap mb-20">
+            <div class="w-full md:w-1/2">
+              <h4 class="text-3xl text-teal-600 font-bold mb-3">
+                Design made simpler
+              </h4>
+              <p class="text-gray-800 mb-8">
+                Great software starts with exceptional design. From concept to
+                reality, our design team translates your vision into a tangible
+                plan that sets the stage for successful implementation. Our
+                design process is rooted in a deep understanding of your
+                business goals and user needs.
+              </p>
+            </div>
+            <div class="w-full md:w-1/2">
+              <img src="assets/meeting.svg" alt="Monitoring" />
+            </div>
+          </div>
+          <div class="flex items-center flex-wrap mb-20">
+            <div class="w-full md:w-1/2">
+              <img src="assets/metrics.svg" alt="Reporting" />
+            </div>
+            <div class="w-full md:w-1/2 pl-10">
+              <h4 class="text-3xl text-teal-500 font-bold mb-3">
+                Build fast and efficiently
+              </h4>
+              <p class="text-gray-800 mb-8">
+                Building on a solid design, we bring your ideas to life with
+                precision and expertise. Our development process emphasizes
+                quality, scalability, and performance, ensuring that the
+                solutions we create not only meet but exceed your expectations.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center flex-wrap mb-20">
+            <div class="w-full md:w-1/2">
+              <h4 class="text-3xl text-teal-400 font-bold mb-3">
+                Execute and scale worldwide!
+              </h4>
+              <p class="text-gray-800 mb-8">
+                Execution is where strategy and planning come to fruition. Our
+                experienced project managers ensure that your projects are
+                delivered on time, within scope, and on budget. Ready to elevate
+                your digital strategy?
+              </p>
+            </div>
+            <div class="w-full md:w-1/2">
+              <img src="assets/dns.svg" alt="Syncing" />
+            </div>
+          </div>
+        </section>
+
+        <section class="container mx-auto py-6">
+          <h2
+            class="text-center text-3xl lg:text-4xl font-bold text-teal-600 mb-2 lg:mb-6"
+          >
+            Our Services
+          </h2>
+          <div class="flex items-stretch justify-between flex-wrap mb-20">
+            <div
+              class="w-full md:w-1/4 p-8 m-8 lg:p-8 bg-gradient-to-b from-white to-teal-100 rounded-xl shadow-md"
+            >
+              <svg
+                class="w-[48px] h-[48px] text-teal-600 mb-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"
+                />
+              </svg>
+
+              <p class="text-teal-500 text-3xl font-bold mb-3">
+                Enterprise Java Development
+              </p>
+              <p class="text-gray-600 text-xl mb-3">
+                Harness the power of Java to build robust, scalable, and secure
+                web applications.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-1/4 p-8 m-8 lg:p-8 bg-gradient-to-b from-white to-teal-100 rounded-xl shadow-md"
+            >
+              <svg
+                class="w-[48px] h-[48px] text-teal-600 mb-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14"
+                />
+              </svg>
+
+              <p class="text-teal-500 text-3xl font-bold mb-3">
+                Software Architecture
+              </p>
+              <p class="text-gray-600 text-xl mb-3">
+                Lay a solid foundation for your software projects with our
+                architecture consulting services.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-1/4 p-8 m-8 lg:p-8 bg-gradient-to-b from-white to-teal-100 rounded-xl shadow-md"
+            >
+              <svg
+                class="w-[48px] h-[48px] text-teal-600 mb-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 6c0 1.657-3.134 3-7 3S5 7.657 5 6m14 0c0-1.657-3.134-3-7-3S5 4.343 5 6m14 0v6M5 6v6m0 0c0 1.657 3.134 3 7 3s7-1.343 7-3M5 12v6c0 1.657 3.134 3 7 3s7-1.343 7-3v-6"
+                />
+              </svg>
+
+              <p class="text-teal-500 text-3xl font-bold mb-3">
+                CRM Integration
+              </p>
+              <p class="text-gray-600 text-xl mb-3">
+                Maximize your customer relationship management capabilities with
+                our CRM integration services.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-1/4 p-8 m-8 lg:p-8 bg-gradient-to-b from-white to-teal-100 rounded-xl shadow-md"
+            >
+              <svg
+                class="w-[48px] h-[48px] text-teal-600 mb-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M6.94318 11h-.85227l.96023-2.90909h1.07954L9.09091 11h-.85227l-.63637-2.10795h-.02272L6.94318 11Zm-.15909-1.14773h1.60227v.59093H6.78409v-.59093ZM9.37109 11V8.09091h1.25571c.2159 0 .4048.04261.5667.12784.162.08523.2879.20502.3779.35937.0899.15436.1349.33476.1349.5412 0 .20833-.0464.38873-.1392.54119-.0918.15246-.2211.26989-.3878.35229-.1657.0824-.3593.1236-.5809.1236h-.75003v-.61367h.59093c.0928 0 .1719-.0161.2372-.0483.0663-.03314.1169-.08002.152-.14062.036-.06061.054-.13211.054-.21449 0-.08334-.018-.15436-.054-.21307-.0351-.05966-.0857-.10511-.152-.13636-.0653-.0322-.1444-.0483-.2372-.0483h-.2784V11h-.78981Zm3.41481-2.90909V11h-.7898V8.09091h.7898Z"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8.31818 2c-.55228 0-1 .44772-1 1v.72878c-.06079.0236-.12113.04809-.18098.07346l-.55228-.53789c-.38828-.37817-1.00715-.37817-1.39543 0L3.30923 5.09564c-.19327.18824-.30229.44659-.30229.71638 0 .26979.10902.52813.30229.71637l.52844.51468c-.01982.04526-.03911.0908-.05785.13662H3c-.55228 0-1 .44771-1 1v2.58981c0 .5523.44772 1 1 1h.77982c.01873.0458.03802.0914.05783.1366l-.52847.5147c-.19327.1883-.30228.4466-.30228.7164 0 .2698.10901.5281.30228.7164l1.88026 1.8313c.38828.3781 1.00715.3781 1.39544 0l.55228-.5379c.05987.0253.12021.0498.18102.0734v.7288c0 .5523.44772 1 1 1h2.65912c.5523 0 1-.4477 1-1v-.7288c.1316-.0511.2612-.1064.3883-.1657l.5435.2614v.4339c0 .5523.4477 1 1 1H14v.0625c0 .5523.4477 1 1 1h.0909v.0625c0 .5523.4477 1 1 1h.6844l.4952.4823c1.1648 1.1345 3.0214 1.1345 4.1863 0l.2409-.2347c.1961-.191.3053-.454.3022-.7277-.0031-.2737-.1183-.5342-.3187-.7207l-6.2162-5.7847c.0173-.0398.0342-.0798.0506-.12h.7799c.5522 0 1-.4477 1-1V8.17969c0-.55229-.4478-1-1-1h-.7799c-.0187-.04583-.038-.09139-.0578-.13666l.5284-.51464c.1933-.18824.3023-.44659.3023-.71638 0-.26979-.109-.52813-.3023-.71637l-1.8803-1.8313c-.3883-.37816-1.0071-.37816-1.3954 0l-.5523.53788c-.0598-.02536-.1201-.04985-.1809-.07344V3c0-.55228-.4477-1-1-1H8.31818Z"
+                />
+              </svg>
+              <p class="text-teal-500 text-3xl font-bold mb-3">
+                API Development
+              </p>
+              <p class="text-gray-600 text-xl mb-3">
+                Enable seamless communication between your systems with our API
+                development and integration services.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-1/4 p-8 m-8 lg:p-8 bg-gradient-to-b from-white to-teal-100 rounded-xl shadow-md"
+            >
+              <svg
+                class="w-[48px] h-[48px] text-teal-600 mb-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21.718 12c0-1.429-1.339-2.681-3.467-3.5.029-.18.077-.37.1-.545.217-2.058-.273-3.543-1.379-4.182-1.235-.714-2.983-.186-4.751 1.239C10.45 3.589 8.7 3.061 7.468 3.773c-1.107.639-1.6 2.124-1.379 4.182.018.175.067.365.095.545-2.127.819-3.466 2.071-3.466 3.5 0 1.429 1.339 2.681 3.466 3.5-.028.18-.077.37-.095.545-.218 2.058.272 3.543 1.379 4.182.376.213.803.322 1.235.316a5.987 5.987 0 0 0 3.514-1.56 5.992 5.992 0 0 0 3.515 1.56 2.44 2.44 0 0 0 1.236-.316c1.106-.639 1.6-2.124 1.379-4.182-.019-.175-.067-.365-.1-.545 2.132-.819 3.471-2.071 3.471-3.5Zm-6.01-7.548a1.5 1.5 0 0 1 .76.187c.733.424 1.055 1.593.884 3.212-.012.106-.043.222-.058.33-.841-.243-1.7-.418-2.57-.523a16.165 16.165 0 0 0-1.747-1.972 4.9 4.9 0 0 1 2.731-1.234Zm-7.917 8.781c.172.34.335.68.529 1.017.194.337.395.656.6.969a14.09 14.09 0 0 1-1.607-.376 14.38 14.38 0 0 1 .478-1.61Zm-.479-4.076a14.085 14.085 0 0 1 1.607-.376c-.205.313-.405.634-.6.969-.195.335-.357.677-.529 1.017-.19-.527-.35-1.064-.478-1.61ZM8.3 12a19.32 19.32 0 0 1 .888-1.75c.33-.568.69-1.118 1.076-1.65.619-.061 1.27-.1 1.954-.1.684 0 1.333.035 1.952.1a19.63 19.63 0 0 1 1.079 1.654c.325.567.621 1.15.887 1.746a18.869 18.869 0 0 1-1.953 3.403 19.218 19.218 0 0 1-3.931 0 20.169 20.169 0 0 1-1.066-1.653A19.324 19.324 0 0 1 8.3 12Zm7.816 2.25c.2-.337.358-.677.53-1.017.191.527.35 1.065.478 1.611a14.48 14.48 0 0 1-1.607.376c.202-.314.404-.635.597-.97h.002Zm.53-3.483c-.172-.34-.335-.68-.53-1.017a20.214 20.214 0 0 0-.6-.97c.542.095 1.078.22 1.606.376a14.111 14.111 0 0 1-.478 1.611h.002ZM12.217 6.34c.4.375.777.773 1.13 1.193-.37-.02-.746-.033-1.129-.033s-.76.013-1.131.033c.353-.42.73-.817 1.13-1.193Zm-4.249-1.7a1.5 1.5 0 0 1 .76-.187 4.9 4.9 0 0 1 2.729 1.233A16.253 16.253 0 0 0 9.71 7.658c-.87.105-1.728.28-2.569.524-.015-.109-.047-.225-.058-.331-.171-1.619.151-2.787.885-3.211ZM3.718 12c0-.9.974-1.83 2.645-2.506.218.857.504 1.695.856 2.506-.352.811-.638 1.65-.856 2.506C4.692 13.83 3.718 12.9 3.718 12Zm4.25 7.361c-.734-.423-1.056-1.593-.885-3.212.011-.106.043-.222.058-.331.84.243 1.697.418 2.564.524a16.37 16.37 0 0 0 1.757 1.982c-1.421 1.109-2.714 1.488-3.494 1.037Zm3.11-2.895c.374.021.753.034 1.14.034.387 0 .765-.013 1.139-.034a14.4 14.4 0 0 1-1.14 1.215 14.248 14.248 0 0 1-1.139-1.215Zm5.39 2.895c-.782.451-2.075.072-3.5-1.038a16.248 16.248 0 0 0 1.757-1.981 16.41 16.41 0 0 0 2.565-.523c.015.108.046.224.058.33.175 1.619-.148 2.789-.88 3.212Zm1.6-4.854A16.563 16.563 0 0 0 17.216 12c.352-.812.638-1.65.856-2.507 1.671.677 2.646 1.607 2.646 2.507 0 .9-.975 1.83-2.646 2.507h-.004Z"
+                />
+                <path
+                  d="M12.215 13.773a1.792 1.792 0 1 0-1.786-1.8v.006a1.787 1.787 0 0 0 1.786 1.794Z"
+                />
+              </svg>
+              <p class="text-teal-500 text-3xl font-bold mb-3">
+                Front-End Development
+              </p>
+              <p class="text-gray-600 text-xl mb-3">
+                Our experts in JavaScript and React create responsive
+                applications that engage users and enhance their experience.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-1/4 p-8 m-8 lg:p-8 bg-gradient-to-b from-white to-teal-100 rounded-xl shadow-md"
+            >
+              <svg
+                class="w-[48px] h-[48px] text-teal-600 mb-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.70858 10.176c-.0059.1918.02016.3833.07716.567.05635.1582.12675.3114.21041.4577.02989.0424.04691.0921.04909.1435-.00368.0394-.01708.0774-.03906.1107-.02198.0333-.05189.0609-.08718.0806l-.41382.2664c-.04921.0342-.10786.0533-.16833.0546-.03729-.0006-.07404-.0088-.10786-.0241-.03383-.0153-.06399-.0373-.08852-.0647-.09084-.0886-.17086-.1872-.23847-.2937-.06312-.1093-.12625-.2323-.19638-.3758-.23007.28-.52286.505-.85597.6577-.3331.1528-.69768.2293-1.0658.2236-.23782.0125-.47581-.0215-.69988-.1002-.22407-.0786-.42969-.2002-.60468-.3575-.16281-.1601-.28937-.3516-.37152-.5622s-.11806-.4357-.10542-.6607c-.0085-.2476.04-.49387.14195-.72084.10194-.22696.25475-.42883.44721-.59079.45708-.34704 1.02741-.5217 1.60615-.49187.23468-.00102.46912.01497.70137.04782.24549.03416.49097.08198.75048.13663V8.2153c.03746-.36552-.07329-.73083-.30861-1.0179-.30324-.22803-.68514-.33327-1.06609-.29376-.23624.00109-.47158.02859-.70138.08198-.23919.05528-.47367.12837-.70137.21861l-.23146.08198h-.09819c-.09819 0-.14027-.06832-.14027-.19812v-.31425c-.00622-.07522.00831-.15069.04208-.21861.05218-.0584.1168-.10503.18937-.13663.2626-.12306.53761-.21922.82061-.28693.33218-.08331.67398-.12464 1.01699-.12297.61832-.0525 1.23302.134 1.71136.5192.19644.21006.34589.45761.43886.72693.09297.26931.12744.55452.1012.83751L7.70858 10.176Zm-2.6512.9701c.23887.0003.47605-.039.70138-.1162.23999-.0798.45329-.2214.61721-.4099.10821-.114.18537-.2525.22444-.403.04532-.1811.06654-.36707.06312-.5534v-.28693c-.20607-.04171-.41451-.07136-.62422-.08881H5.4221c-.34289-.02679-.68477.06249-.9679.25277-.10942.08972-.19564.20325-.25168.33142-.05605.12815-.08036.26735-.07095.40635-.01155.1238.00371.2486.04479.3663.04108.1177.10706.2256.19367.3169.19501.1477.4422.214.68735.1845Zm5.25332.6831c-.0889.0081-.178-.0136-.2525-.0615-.07121-.069-.12-.1569-.14028-.2527l-1.529-4.91878c-.03108-.08355-.04997-.17094-.05611-.2596 0-.10247.04909-.15713.1543-.15713h.64527c.08889-.00805.17795.01364.25249.06149.06832.07011.11457.15783.13326.25277L10.6193 10.743l1.031-4.24242c.0108-.09596.0554-.1853.1263-.25277.0771-.04787.1684-.06949.2595-.06149h.526c.0933-.008.1868.01357.2665.06149.0658.07094.1096.15858.1263.25277l1.017 4.24242 1.1292-4.26292c.0187-.09493.0649-.18265.1332-.25277.0746-.04785.1636-.06953.2525-.06148h.6102c.0218-.00213.0437.00047.0643.00761.0205.00714.0392.01865.0547.03369.0154.01503.0272.03323.0345.05326.0074.02004.01.04141.0079.06257.0026.03411.0026.06836 0 .10247 0 0 0 .08881-.0421.15713l-1.5851 4.91874c-.0187.0949-.065.1826-.1333.2528-.0754.0459-.1638.0675-.2525.0614h-.5611c-.0922.0096-.1848-.0148-.2595-.0683-.0695-.0684-.1139-.1572-.1263-.2527l-1.0169-4.09899-1.01 4.09899c-.0124.0955-.0568.1843-.1263.2527-.0753.0524-.1674.0766-.2595.0683l-.5751.0137Zm8.4165.164c-.3399.0015-.6788-.0351-1.01-.1093-.2607-.051-.5131-.136-.7505-.2528-.0839-.039-.1545-.1006-.2034-.1776-.0272-.0579-.0415-.1208-.042-.1845v-.3211c0-.1298.0491-.1981.1473-.1981.0418-.0065.0844-.0065.1262 0l.1613.0683c.2248.0979.46.1712.7014.2186.2558.0543.5168.0818.7785.082.3323.0202.6634-.0534.9539-.2118.1055-.0624.1921-.1509.2512-.2565.0592-.1055.0886-.2244.0855-.3446.0033-.0818-.0106-.1633-.0407-.2397-.0302-.07633-.076-.14588-.1347-.20439-.1899-.16027-.4157-.27492-.6593-.33474l-.9468-.29376c-.4097-.1003-.7758-.32526-1.0451-.64217-.2118-.26596-.3277-.59251-.3296-.92909-.0039-.23873.0566-.47428.1753-.68316.1173-.2053.2774-.38447.4699-.52603.2109-.15082.4487-.26203.7014-.32792.2689-.07547.5478-.11229.8276-.1093.1448-.00996.2901-.00996.4349 0l.4278.06831.3717.10247.2736.10931c.0734.04221.1396.09522.1964.15713.0391.06392.0585.13741.0561.21178v.30058c0 .13664-.0491.20495-.1473.20495-.0891-.00994-.1751-.03786-.2525-.08198-.3981-.16851-.8285-.25236-1.2625-.24593-.3007-.01421-.6002.04695-.8697.17762-.1001.05934-.1817.14411-.236.24521-.0544.1011-.0795.21471-.0726.32864-.0003.08419.0169.16757.0507.24507.0337.07751.0833.14753.1457.20581.207.16139.4457.27994.7014.34842l.9258.28692c.3924.10142.7444.31568 1.01.61484.201.25675.3073.57207.3016.89491.0041.2554-.0535.5082-.1684.7378-.1126.22-.2758.4117-.4769.5602-.2081.163-.4461.2859-.7014.3621-.3061.0959-.6253.1465-.9468.1503l.021-.0068ZM1.95721 14.0043c.08851-.1117.25276-.1417.40291-.0501 2.956 1.6699 6.30435 2.5466 9.71118 2.5424 2.547-.0102 5.0667-.5176 7.4139-1.4927.2212-.0923.442-.0252.5504.1273.0544.0765.0784.1732.056.2731-.0223.0994-.088.1913-.1929.2664l-.0025.0018c-2.374 1.591-5.18 2.437-8.0499 2.4273-3.62804.0192-7.13297-1.2975-9.82873-3.6929.00006 0-.00007-.0001 0 0-.06599-.0585-.10575-.1289-.1154-.2033-.00962-.0742.01189-.1449.05504-.1993Z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M21.9852 13.2357c-.0506-.0587-.1329-.1058-.2258-.1441-.0959-.0396-.2151-.0746-.3508-.1035-.2719-.0579-.6185-.093-.9967-.0876-.7541.0108-1.6508.183-2.3341.6748-.1118.0805-.1949.1945-.1751.3147.0225.1362.1551.1917.2864.1917l.0241-.003c.375-.0465.9652-.1198 1.5-.134.2706-.0072.5225.0009.7232.0339.1003.0164.1845.0386.2506.0663.0667.028.1084.0591.1318.0896l.001.0013c.0211.0266.0396.072.0489.1434.0092.0704.0085.1579-.0018.2604-.0204.2049-.0773.456-.1527.723-.1173.4156-.2758.8577-.4014 1.2081-.0355.0991-.0684.1909-.097.2727-.0253.0645-.0344.13-.0204.1901.0147.063.0538.1145.1113.143.1108.0549.2469.0095.3548-.0833.6431-.5509 1.0488-1.3947 1.2591-2.1349.1055-.3712.1632-.7208.1764-1.0006.0065-.1398.0021-.2647-.0141-.3675-.0155-.099-.0442-.1922-.0977-.2545Z"
+                />
+              </svg>
+
+              <p class="text-teal-500 text-3xl font-bold mb-3">
+                Cloud Integration
+              </p>
+              <p class="text-gray-600 text-xl mb-3">
+                We harness the capabilities of AWS to provide secure cloud
+                solutions that optimize your IT infrastructure.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="container mx-auto py-6">
+          <img class="rounded-xl h-1/4" src="assets/treeline.png" alt="Grid" />
+        </section>
+      </main>
+      <footer class="bg-teal-500">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                <!-- <img
+                  src="https://flowbite.com/docs/images/logo.svg"
+                  class="h-8 me-3"
+                  alt="FlowBite Logo"
+                /> -->
+                <svg
+                  class="fill-current h-8 w-8 mr-2"
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+                  />
+                </svg>
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                  >Binary Computing</span
+                >
+              </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                  Resources
+                </h2>
+                <ul class="text-gray-200 font-medium">
+                  <li class="mb-4">
+                    <a href="https://flowbite.com/" class="hover:underline"
+                      >Flowbite</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://tailwindcss.com/" class="hover:underline"
+                      >Tailwind CSS</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                  Follow us
+                </h2>
+                <ul class="text-gray-200 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://github.com/themesberg/flowbite"
+                      class="hover:underline "
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.gg/4eeurUVvTy"
+                      class="hover:underline"
+                      >Discord</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white">
+                  Legal
+                </h2>
+                <ul class="text-gray-200 font-medium">
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:underline"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-200 sm:text-center"
+              >© 2023
+              <a href="https://flowbite.com/" class="hover:underline"
+                >Binary Computing</a
+              >. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 8 19"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 21 16"
+                >
+                  <path
+                    d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                  />
+                </svg>
+                <span class="sr-only">Discord community</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 17"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">GitHub account</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Dribbble account</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
